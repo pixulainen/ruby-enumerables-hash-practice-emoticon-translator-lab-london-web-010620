@@ -28,6 +28,6 @@ def get_english_meaning(path,meaning)
   if library["get_meaning"].include?(meaning)
     library["get_meaning"][meaning]
   else
-    "Sorry, that meaning was not found"
+    "Sorry, that emoticon was not found"
   end
 end
