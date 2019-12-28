@@ -23,6 +23,11 @@ end
 end
 
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(path,meaning)
+  library = load_library(path)
+  if library["get_meaning"].include?(meaning)
+    library["get_meaning"][meaning]
+  else
+    "Sorry, that meaning was not found"
+  end
 end
