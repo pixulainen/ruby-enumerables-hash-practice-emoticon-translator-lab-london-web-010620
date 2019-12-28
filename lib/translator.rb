@@ -18,7 +18,7 @@ library = load_library(path)
   if library["get_emoticon"].include?(emoticon)
     return library["get_emoticon"][emoticon]
   else
-    return "Unknown Emoticon"
+    return "Sorry, that emoticon was not found"
 end
 end
 
