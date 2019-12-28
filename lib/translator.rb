@@ -15,10 +15,11 @@ end
 
 def get_japanese_emoticon(path,emoticon)
 library = load_library(path)
-if library["get_emoticon"].include?
-  
+  if library["get_emoticon"].include?(emoticon)
+    return emoticon
+  else
+    return "Unknown Emoticon"
 end
-
 end
 
 
